@@ -150,6 +150,18 @@ function getDeviceProfile(profileBuilder, item) {
         return profiles;
     }, []);
 
+    profile.TranscodingProfiles.push({
+     "Container": "mp4",
+     "Type": "Video",
+     "AudioCodec": "aac,mp2,opus,flac",
+     "VideoCodec": "av1,hevc,h264,vp9",
+     "Context": "Streaming",
+     "Protocol": "hls",
+     "MaxAudioChannels": "2",
+     "MinSegments": "1",
+     "BreakOnNonKeyFrames": true
+    });
+
     return profile;
 }
 
