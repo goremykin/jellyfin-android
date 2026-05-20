@@ -56,7 +56,7 @@
     <string name="pref_category_video_player">Відеоплеєр</string>
     <string name="pref_music_notification_always_dismissible_summary_on">Сповіщення завжди можна відхилити, навіть під час відтворення медіа</string>
     <string name="pref_music_notification_always_dismissible_summary_off">Сповіщення можна відхилити, лише коли відтворення призупинено</string>
-    <string name="pref_music_notification_always_dismissible_title">Відхилення сповіщень при програванні</string>
+    <string name="pref_music_notification_always_dismissible_title">Сповіщення плеєра, яке можна закрити</string>
     <string name="pref_category_music_player">Музичний плеєр</string>
     <string name="activity_name_settings">Налаштування Jellyfin</string>
     <string name="external_player_unknown_error">Невідома помилка у зовнішньому плеєрі. Відстеження відтворення вимкнено.</string>
@@ -133,4 +133,17 @@
     <string name="downloaded">Завантажено %1$s</string>
     <string name="skip_media_segment">Пропустити</string>
     <string name="special_episode">Спецвипуски</string>
+    <string name="pref_exoplayer_network_buffer">Обсяг буферизації</string>
+    <string name="network_buffer_auto">Автоматично</string>
+    <string name="network_buffer_auto_description">Стандартний буфер, підходить для більшості випадків відтворення</string>
+    <string name="network_buffer_large">Великий</string>
+    <string name="network_buffer_large_description">Збільшений буфер, може допомогти при середній або нестабільній швидкості з\'єднання</string>
+    <string name="network_buffer_extra_large">Максимальний</string>
+    <string name="network_buffer_extra_large_description">Максимальний буфер, призначений для повільного або супутникового з\'єднання</string>
+    <string name="media_service_unknown_page">Невідома сторінка</string>
+    <string name="media_service_no_items">Нічого не знайдено</string>
+    <string name="media_service_auth_expired">Відкрийте програму на телефоні, щоб увійти на сервер Jellyfin.</string>
+    <string name="media_service_invalid_id">Недійсний ID елемента</string>
+    <string name="media_service_car_section_favorites">Улюблене</string>
+    <string name="media_service_car_section_audiobooks">Аудіокниги</string>
 </resources>
