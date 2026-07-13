@@ -54,7 +54,6 @@
     <string name="media_service_car_section_artists">कलाकार</string>
     <string name="media_service_car_section_songs">गाने</string>
     <string name="media_service_car_section_genres">शैली</string>
-    <string name="media_service_car_section_playlists">प्लेलिस्ट</string>
     <string name="media_service_car_item_no_title">कोई शीर्षक नहीं</string>
     <string name="music_notification_channel">जेलिफ़िन संगीत प्लेयर</string>
     <string name="music_notification_channel_description">संगीत प्लेबैक नियंत्रण के लिए उपयोग किया जाता है</string>
@@ -135,8 +134,6 @@
     <string name="failed_thumbnail">थंबनेल डाउनलोड करना विफल रहा</string>
     <string name="failed_information">मीडिया जानकारी पाना विफल रहा</string>
     <string name="failed_network_method_check">कृपया अपने अनुमत डाउनलोड के तरीके चेक करें</string>
-    <string name="confirm_deletion">हटानें की पुष्टि करें</string>
-    <string name="confirm_deletion_desc">क्या आप %1$s को हटाना चाहते हैं?</string>
     <string name="yes">हाँ</string>
     <string name="no">नहीं</string>
     <string name="thumbnail_desc">थंबनेल</string>

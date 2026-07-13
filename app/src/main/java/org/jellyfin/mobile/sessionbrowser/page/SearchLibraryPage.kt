@@ -1,8 +1,10 @@
 package org.jellyfin.mobile.sessionbrowser.page
 
+import android.content.Context
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.withContext
+import org.jellyfin.mobile.R
 import org.jellyfin.mobile.sessionbrowser.LibraryItemAction
 import org.jellyfin.mobile.sessionbrowser.LibraryPageElement
 import org.jellyfin.mobile.sessionbrowser.LibraryRoute
@@ -30,11 +32,11 @@ private suspend fun search(
     }
 }
 
-val SearchLibraryPage = { api: ApiClient ->
+val SearchLibraryPage = { context: Context, api: ApiClient ->
     libraryPage<LibraryRoute.Search>(grid = true) { route, offset, limit ->
         if (route.query.isNullOrBlank()) return@libraryPage emptyList()
 
-        val (playlists, albums, artists) = listOf(
+        val (playlists, albums, artists, audioBooks) = listOf(
             search(api, route.query, setOf(BaseItemKind.PLAYLIST)) to { item: BaseItemDto ->
                 LibraryPageElement.baseItem(api, item, action = LibraryItemAction.Navigate(LibraryRoute.Playlist(item.id)))
             },
@@ -44,14 +46,18 @@ val SearchLibraryPage = { api: ApiClient ->
             search(api, route.query, setOf(BaseItemKind.MUSIC_ARTIST)) to { item: BaseItemDto ->
                 LibraryPageElement.baseItem(api, item, action = LibraryItemAction.Navigate(LibraryRoute.Artist(item.id)))
             },
+            search(api, route.query, setOf(BaseItemKind.AUDIO_BOOK)) to { item: BaseItemDto ->
+                LibraryPageElement.baseItem(api, item, action = LibraryItemAction.Play(item))
+            },
         ).map { (deferred, mapper) ->
             deferred.await().content.items.map(mapper)
         }
 
         listOf(
-            LibraryPageElement.Group("Playlists", playlists),
-            LibraryPageElement.Group("Albums", albums),
-            LibraryPageElement.Group("Artists", artists),
+            LibraryPageElement.Group(context.getString(R.string.media_service_car_section_playlists), playlists),
+            LibraryPageElement.Group(context.getString(R.string.media_service_car_section_albums), albums),
+            LibraryPageElement.Group(context.getString(R.string.media_service_car_section_artists), artists),
+            LibraryPageElement.Group(context.getString(R.string.media_service_car_section_audiobooks), audioBooks),
         )
     }
 }

@@ -58,7 +58,6 @@
     <string name="music_notification_channel_description">Folosit pentru comenzile de redare a muzicii</string>
     <string name="music_notification_channel">Jellyfin Music Player</string>
     <string name="media_service_car_item_no_title">Fără titlu</string>
-    <string name="media_service_car_section_playlists">Liste redare</string>
     <string name="media_service_car_section_genres">Genuri</string>
     <string name="media_service_car_section_songs">Melodii</string>
     <string name="media_service_car_section_artists">Artiști</string>
@@ -122,11 +121,9 @@
     <string name="external_player_mpvkt">mpvKt media player</string>
     <string name="external_player_mpvkt_description">Un player media bazat pe mpv-android care urmărește să ofere o interfață de utilizator mai plăcută față de originalul.</string>
     <string name="view_downloads">Vedeți descărcări</string>
-    <string name="confirm_deletion">Confirmați ștergerea</string>
     <string name="yes">Da</string>
     <string name="store_videos_in_internal_storage">Stocați videoclipuri în stocarea internă</string>
     <string name="pref_exoplayer_allow_press_speed_up">Țineți apăsat pentru a accelera</string>
-    <string name="confirm_deletion_desc">Doriți să ștergeți %1$s?</string>
     <string name="no">Nu</string>
     <string name="thumbnail_desc">Miniatură</string>
     <string name="tv_show_desc">%1$s - S%2$dE%3$d</string>
@@ -134,4 +131,36 @@
     <string name="downloaded">S-a descărcat %1$s</string>
     <string name="skip_media_segment">Omite</string>
     <string name="special_episode">Special</string>
+    <string name="media_service_unknown_page">Pagină necunoscută</string>
+    <string name="media_service_no_items">Niciun obiect găsit</string>
+    <string name="media_service_auth_expired">Te rog deschide aplicația pe telefon pentru a te conecta la server-ul tău Jellyfin.</string>
+    <string name="media_service_invalid_id">ID obiect invalid</string>
+    <string name="media_service_car_section_favorites">Favorite</string>
+    <string name="media_service_car_section_audiobooks">Cărți audio</string>
+    <string name="media_service_car_section_playlists">Listă de redare</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture">Gesturi orizontale</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture_summary">Permite controlul gesturilor orizontale pentru căutarea videoclipurilor</string>
+    <string name="pref_exoplayer_network_buffer">Dimensiunea bufferului de redare</string>
+    <string name="network_buffer_auto">Automat</string>
+    <string name="network_buffer_auto_description">Buffer implicit, potrivit pentru majoritatea scenariilor de redare</string>
+    <string name="network_buffer_large">Mare</string>
+    <string name="network_buffer_large_description">Buffer mai mare, poate fi util pentru conexiuni moderate sau variabile</string>
+    <string name="network_buffer_extra_large">Foarte mare</string>
+    <string name="network_buffer_extra_large_description">Buffer maxim, destinat conexiunilor lente sau prin satelit</string>
+    <string name="downloads_empty">Nicio descărcare încă</string>
+    <string name="downloads_empty_description">Poți descărca filme și emisiuni TV pentru a le viziona offline. Caută pictograma de descărcare pe pagina cu detaliile articolului.</string>
+    <string name="downloading_title">Se descarcă %1$s</string>
+    <string name="download_cancel">Anulează</string>
+    <string name="download_completed">Descărcare finalizată</string>
+    <string name="download_progress">%1$d%%</string>
+    <string name="download_remove_keep_local">Păstrați fișierele locale</string>
+    <plurals name="download_remove_description">
+        <item quantity="one">Doriți să eliminați %1$s din descărcări?</item>
+        <item quantity="few"></item>
+        <item quantity="other"></item>
+    </plurals>
+    <string name="download_incomplete">Descărcarea incompletă</string>
+    <string name="download_settings_dialog_title">Alegeți locația de descărcare</string>
+    <string name="download_settings_dialog_message">Vă rugăm să alegeți unde doriți să fie salvate fișierele media descărcate. Descărcările utilizează în mod implicit doar WiFi.</string>
+    <string name="select_folder">Selectați folderul</string>
 </resources>

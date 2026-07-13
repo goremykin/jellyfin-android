@@ -58,7 +58,6 @@
     <string name="music_notification_channel_description">A zenelejátszás vezérlésére szolgál</string>
     <string name="music_notification_channel">Jellyfin Zenelejátszó</string>
     <string name="media_service_car_item_no_title">Nincs cím</string>
-    <string name="media_service_car_section_playlists">Lejátszási listák</string>
     <string name="media_service_car_section_genres">Műfajok</string>
     <string name="media_service_car_section_songs">Dalok</string>
     <string name="media_service_car_section_artists">Előadók</string>
@@ -120,8 +119,6 @@
     <string name="downloads">Letöltések</string>
     <string name="download_notifications_description">Letöltési értesítések</string>
     <string name="failed_thumbnail">Bélyegkép letöltése sikertelen</string>
-    <string name="confirm_deletion">Törlés megerősítése</string>
-    <string name="confirm_deletion_desc">Törölni szeretnéd a(z) %1$s?</string>
     <string name="thumbnail_desc">Bélyegkép</string>
     <string name="failed_information">Médiaadatok lekérése sikertelen</string>
     <string name="failed_network_method_check">Kérlek, ellenőrizd a megengedett letöltési módjaidat</string>
@@ -146,4 +143,32 @@
     <string name="media_service_invalid_id">Érvénytelen elemazonosító</string>
     <string name="media_service_car_section_favorites">Kedvencek</string>
     <string name="media_service_car_section_audiobooks">Hangoskönyvek</string>
+    <string name="download_incomplete">A letöltés befejezetlen</string>
+    <string name="media_service_car_section_playlists">Lejátszási listák</string>
+    <string name="downloading_title">%1$s letöltése folyamatban</string>
+    <string name="download_cancel">Mégsem</string>
+    <string name="download_completed">Letöltés befejezve</string>
+    <string name="download_progress">%1$d%%</string>
+    <string name="download_remove_keep_local">Helyi fájl(ok) megtartása</string>
+    <plurals name="download_remove_description">
+        <item quantity="one">El szeretnéd távolítani a(z) %1$s fájlt a letöltéseid közül?</item>
+        <item quantity="other"/>
+    </plurals>
+    <string name="pref_exoplayer_allow_horizontal_gesture">Vízszintes gesztusok</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture_summary">Vízszintes gesztusvezérlés engedélyezése videókereséshez</string>
+    <string name="downloads_empty">Még nincsenek letöltések</string>
+    <string name="downloads_empty_description">Letölthetsz filmeket és tévéműsorokat offline megtekintéshez. Keresd a letöltés ikont az elem részleteinek oldalán.</string>
+    <string name="download_settings_dialog_title">Letöltési hely kiválasztása</string>
+    <string name="download_settings_dialog_message">Kérjük, válassza ki, hová mentse a letöltött médiafájlokat. A letöltések alapértelmezés szerint csak Wi-Fi-t használnak.</string>
+    <string name="select_folder">Mappa kiválasztása</string>
+    <plurals name="download_remove_title">
+        <item quantity="one">Letöltés eltávolítása</item>
+        <item quantity="other">Letöltések eltávolítása</item>
+    </plurals>
+    <string name="select_all">Összes kijelölése</string>
+    <string name="deselect_all">Összes kijelölés törlése</string>
+    <string name="download_location_not_set">Nincs letöltési hely</string>
+    <string name="download_location_not_set_description">Média letöltéséhez kérjük, válasszon ki egy mappát, ahová a fájlokat tárolni szeretné.</string>
+    <string name="download_location_inaccessible">A letöltési hely nem érhető el</string>
+    <string name="download_location_inaccessible_description">A kiválasztott letöltési hely már nem érhető el. Kérjük, válasszon egy másik mappát a letöltések folytatásához.</string>
 </resources>

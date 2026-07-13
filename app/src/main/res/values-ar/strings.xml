@@ -61,7 +61,6 @@
     <string name="music_notification_channel_description">تستخدم للتحكم في تشغيل الموسيقى</string>
     <string name="music_notification_channel">مشغل موسيقى Jellyfin</string>
     <string name="media_service_car_item_no_title">بلا عنوان</string>
-    <string name="media_service_car_section_playlists">قوائم التشغيل</string>
     <string name="media_service_car_section_genres">الأنواع</string>
     <string name="media_service_car_section_songs">الأغاني</string>
     <string name="media_service_car_section_artists">الفنانين</string>
@@ -127,8 +126,6 @@
     <string name="downloads">التنزيلات</string>
     <string name="download_notifications_description">إشعارات التنزيل</string>
     <string name="failed_thumbnail">فشل في تنزيل الصورة المصغّرة</string>
-    <string name="confirm_deletion">تأكيد الحذف</string>
-    <string name="confirm_deletion_desc">هل تريد حذف %1$s؟</string>
     <string name="thumbnail_desc">صورة مصغّرة</string>
     <string name="stored_videos_in_internal_storage_desc">سيتم تخزين الفيديوهات مثل الأفلام والمسلسلات في الذاكرة الداخلية للتطبيق، مما يتيح الوصول إليها من داخل التطبيق.</string>
     <string name="downloading_desc">جارٍ تنزيل %1$d عنوانًا</string>
@@ -149,4 +146,41 @@
     <string name="media_service_invalid_id">تعريف عنصر خاطئ</string>
     <string name="media_service_car_section_favorites">المفضلة</string>
     <string name="media_service_car_section_audiobooks">كتب صوتية</string>
+    <string name="media_service_car_section_playlists">لائحة تشغيل</string>
+    <string name="downloading_title">تحميل %1$s</string>
+    <string name="download_cancel">إلغاء</string>
+    <string name="download_completed">تم التحميل</string>
+    <string name="download_progress">%1$d%%</string>
+    <string name="download_remove_keep_local">الاحتفاظ بالملف(ات) المحلية</string>
+    <plurals name="download_remove_description">
+        <item quantity="zero">هل ترغب في حذف %1$s من ملفات التحميل؟</item>
+        <item quantity="one">حذف ملف تحميل</item>
+        <item quantity="two">حذف ملفي تحميل</item>
+        <item quantity="few">حذف بعض ملفات تحميل</item>
+        <item quantity="many">حذف عدة ملفات تحميل</item>
+        <item quantity="other">حذف ملفات تحميل اخرى</item>
+    </plurals>
+    <string name="download_incomplete">لم يكتمل التحميل</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture">إيماءات افقية</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture_summary">السماح بإيماءات التحكم الافقية لبحث الفيديو</string>
+    <string name="downloads_empty">لا تحميلات حاليا</string>
+    <string name="downloads_empty_description">بإمكانك تحميل أفلام و برامج تلفزيونية لمشاهدتها بغير اتصال. ابحث عن ايقونة التحميل على عنصر صفحة التفاصيل.</string>
+    <string name="download_settings_dialog_title">اختر موقع التحميل</string>
+    <string name="download_settings_dialog_message">برجى اختيار اين يمكن حفظ الوسائط المحملة. التحميلات افتراضيا التحميلات تستخدم فقط الواي فاي.</string>
+    <string name="select_folder">اختر المجلد</string>
+    <string name="select_all">اختيار الكل</string>
+    <string name="deselect_all">عدم اختيار الكل</string>
+    <string name="selected_count">%1$d مختار</string>
+    <string name="download_location_not_set">لا يوجد موقع للتحميل</string>
+    <string name="download_location_not_set_description">لتحميل الوسيطة, يرجى اختيار مجلد حيث يتم حفظ الملفات فيه.</string>
+    <string name="download_location_inaccessible">تعذر الوصول لموقع التحميل</string>
+    <string name="download_location_inaccessible_description">يتعذر الوصول للموقع المختار للتحميل. يرجى اختيار مجلد آخر لإستكمال التجميل.</string>
+    <plurals name="download_remove_title">
+        <item quantity="zero">لا لحذف ملف تحميل</item>
+        <item quantity="one">حذف ملف تحميل</item>
+        <item quantity="two">حذف ملفي تحميل</item>
+        <item quantity="few">حذف ثلة ملفات تحميل</item>
+        <item quantity="many">حذف عدة ملفات تحميل</item>
+        <item quantity="other">حذف ملفات تجميل اخرى</item>
+    </plurals>
 </resources>

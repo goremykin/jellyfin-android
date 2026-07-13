@@ -57,7 +57,6 @@
     <string name="external_player_app">Application externe de lecture</string>
     <string name="music_notification_channel">Lecteur de musique Jellyfin</string>
     <string name="media_service_car_item_no_title">Aucun titre</string>
-    <string name="media_service_car_section_playlists">Listes de lecture</string>
     <string name="media_service_car_section_genres">Genres</string>
     <string name="media_service_car_section_songs">Chansons</string>
     <string name="media_service_car_section_artists">Artistes</string>
@@ -112,7 +111,6 @@
     <string name="wifi_only_summary">Les médias seront téléchargés uniquement via WiFi.</string>
     <string name="mobile_data_summary">Les médias seront téléchargés via les réseaux WiFi et mobiles.</string>
     <string name="mobile_data_and_roaming_summary">Les médias seront téléchargés sur les réseaux WiFi, mobiles et itinérants.</string>
-    <string name="confirm_deletion">Confirmer la suppression</string>
     <string name="pref_exoplayer_allow_press_speed_up">Maintenir pour accélérer</string>
     <string name="failed_network_method_check">Veuillez vérifier vos méthodes de téléchargement autorisées</string>
     <string name="pref_exoplayer_allow_press_speed_up_summary">Toucher et maintenir l’écran pour accélérer temporairement la lecture</string>
@@ -122,7 +120,6 @@
     <string name="external_player_mpvkt_description">Un lecteur multimédia basé sur mpv-android, visant à offrir une interface utilisateur plus agréable que celle d\'origine.</string>
     <string name="failed_thumbnail">Le téléchargement de la miniature a échoué</string>
     <string name="external_player_mpvkt">Lecteur mpvKt</string>
-    <string name="confirm_deletion_desc">Voulez-vous supprimer %1$s?</string>
     <string name="yes">Oui</string>
     <string name="no">Non</string>
     <string name="thumbnail_desc">Miniature</string>
@@ -146,4 +143,36 @@
     <string name="network_buffer_auto_description">Tampon par défaut, adéquat pour la plupart des scénarios de lecture</string>
     <string name="network_buffer_large">Large</string>
     <string name="network_buffer_large_description">Tampon large, peut aider pour les connections moyennes ou variables</string>
+    <string name="media_service_car_section_audiobooks">Livres audio</string>
+    <string name="media_service_car_section_playlists">Listes de lecture</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture">Gestes horizontaux</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture_summary">Autoriser le contrôle par gestes horizontaux pour le défilement des vidéos</string>
+    <string name="downloads_empty">Aucun téléchargement pour l\'instant</string>
+    <string name="downloads_empty_description">Vous pouvez télécharger des films et des séries pour les regarder hors ligne. Recherchez l\'icône de téléchargement sur la page de détails du contenu.</string>
+    <string name="downloading_title">Téléchargement de %1$s</string>
+    <string name="download_cancel">Annuler</string>
+    <string name="download_completed">Téléchargement terminé</string>
+    <string name="download_progress">%1$d%%</string>
+    <string name="download_remove_keep_local">Conserver le(s) fichier(s) local(aux)</string>
+    <plurals name="download_remove_description">
+        <item quantity="one">Souhaitez-vous supprimer \"%2$s\" de vos téléchargements ?</item>
+        <item quantity="many">Souhaitez-vous supprimer ces %1$d téléchargements ?</item>
+        <item quantity="other">Souhaitez-vous supprimer ces %1$d téléchargements ?</item>
+    </plurals>
+    <string name="download_incomplete">Téléchargement incomplet</string>
+    <string name="download_settings_dialog_title">Choisissez l\'emplacement de téléchargement</string>
+    <string name="download_settings_dialog_message">Veuillez choisir l\'emplacement où enregistrer les fichiers multimédias téléchargés. Par défaut, les téléchargements s\'effectuent uniquement via le Wi-Fi.</string>
+    <string name="select_folder">Sélectionner un dossier</string>
+    <plurals name="download_remove_title">
+        <item quantity="one">Supprimer téléchargement</item>
+        <item quantity="many">Supprimer téléchargements</item>
+        <item quantity="other">Supprimer téléchargements</item>
+    </plurals>
+    <string name="select_all">Tous sélectionner</string>
+    <string name="deselect_all">Tous désélectionner</string>
+    <string name="selected_count">%1$d sélectionné</string>
+    <string name="download_location_not_set">Aucun emplacement de téléchargement</string>
+    <string name="download_location_not_set_description">Pour télécharger des fichiers multimédias, veuillez sélectionner un dossier dans lequel les fichiers doivent être enregistrés.</string>
+    <string name="download_location_inaccessible">Emplacement de téléchargement inaccessible</string>
+    <string name="download_location_inaccessible_description">L\'emplacement de téléchargement sélectionné n\'est plus accessible. Veuillez choisir un autre dossier pour reprendre les téléchargements.</string>
 </resources>

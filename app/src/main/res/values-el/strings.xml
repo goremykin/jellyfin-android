@@ -48,7 +48,6 @@
     <string name="media_service_car_section_recents">Παίχτηκε πρόσφατα</string>
     <string name="media_service_car_section_albums">Άλμπουμ</string>
     <string name="media_service_car_section_genres">Είδη</string>
-    <string name="media_service_car_section_playlists">Λίστες αναπαραγωγής</string>
     <string name="media_service_car_item_no_title">Χωρίς τίτλο</string>
     <string name="music_notification_channel">Jellyfin Music Player</string>
     <string name="music_notification_channel_description">Χρησιμοποιείται για χειρισμό αναπαραγωγής μουσικής</string>
@@ -123,8 +122,6 @@
     <string name="failed_thumbnail">Αποτυχία λήψης μικρογραφίας</string>
     <string name="failed_information">Αποτυχία ανάκτησης πληροφοριών πολυμέσων</string>
     <string name="failed_network_method_check">Παρακαλώ ελέγξτε τις επιτρεπόμενες μεθόδους λήψης</string>
-    <string name="confirm_deletion">Επιβεβαίωση διαγραφής</string>
-    <string name="confirm_deletion_desc">Θέλετε να διαγράψετε το %1$s;</string>
     <string name="yes">Ναι</string>
     <string name="no">Οχι</string>
     <string name="thumbnail_desc">Μικρογραφία</string>
@@ -133,4 +130,32 @@
     <string name="tv_show_desc">%1$s - S%2$dE%3$d</string>
     <string name="downloading_desc">Λήψη %1$d τίτλων</string>
     <string name="downloaded">Εγινε λήψη του %1$s</string>
+    <string name="download_incomplete">Η λήψη δεν ολοκληρώθηκε</string>
+    <plurals name="download_remove_description">
+        <item quantity="one">Θέλετε να αφαιρέσετε το \"%2$s\" από τις λήψεις σας;</item>
+        <item quantity="other">Θέλετε να αφαιρέσετε τα %1$d από τις λήψεις σας;</item>
+    </plurals>
+    <string name="download_remove_keep_local">Διατήρηση τοπικών αρχείων</string>
+    <string name="download_progress">%1$d%%</string>
+    <string name="download_completed">Η λήψη ολοκληρώθηκε</string>
+    <string name="download_cancel">Ακυρο</string>
+    <string name="downloading_title">Λήψη του %1$s</string>
+    <string name="downloads_empty_description">Μπορείτε να κατεβάσετε ταινίες και τηλεοπτικές εκπομπές για να τις παρακολουθήσετε εκτός σύνδεσης. Αναζητήστε το εικονίδιο λήψης στη σελίδα λεπτομερειών του στοιχείου.</string>
+    <string name="downloads_empty">Δεν υπάρχουν ακόμη λήψεις</string>
+    <string name="select_folder">Επιλέξτε φάκελο</string>
+    <string name="download_settings_dialog_message">Επιλέξτε πού θα αποθηκεύονται τα ληφθέντα πολυμέσα. Οι λήψεις χρησιμοποιούν μόνο WiFi από προεπιλογή.</string>
+    <string name="download_settings_dialog_title">Επιλέξτε τοποθεσία λήψης</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture_summary">Να επιτρέπεται ο έλεγχος με οριζόντιες χειρονομίες για αναζήτηση σε βίντεο</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture">Οριζόντιες χειρονομίες</string>
+    <string name="download_location_inaccessible_description">Η επιλεγμένη τοποθεσία λήψης δεν είναι πλέον προσβάσιμη. Παρακαλώ επιλέξτε διαφορετικό φάκελο για να συνεχίσετε τις λήψεις.</string>
+    <string name="download_location_inaccessible">Η τοποθεσία λήψης δεν είναι προσβάσιμη</string>
+    <string name="download_location_not_set_description">Για να κάνετε λήψη πολυμέσων, επιλέξτε έναν φάκελο όπου θα αποθηκευτούν τα αρχεία.</string>
+    <string name="download_location_not_set">Δεν υπάρχει τοποθεσία λήψης</string>
+    <string name="selected_count">%1$d επιλέχθηκαν</string>
+    <string name="deselect_all">Αποεπιλογή όλων</string>
+    <string name="select_all">Επιλογή όλων</string>
+    <plurals name="download_remove_title">
+        <item quantity="one">Αφαίρεση λήψης</item>
+        <item quantity="other">Αφαίρεση λήψεων</item>
+    </plurals>
 </resources>

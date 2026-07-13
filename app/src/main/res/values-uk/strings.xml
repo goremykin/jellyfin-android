@@ -20,7 +20,6 @@
     <string name="notification_action_previous">Попередній</string>
     <string name="music_notification_channel">Музичний плеєр Jellyfin</string>
     <string name="media_service_car_item_no_title">Без назви</string>
-    <string name="media_service_car_section_playlists">Список відтворення</string>
     <string name="media_service_car_section_genres">Жанри</string>
     <string name="media_service_car_section_songs">Пісні</string>
     <string name="media_service_car_section_albums">Альбоми</string>
@@ -118,7 +117,6 @@
     <string name="yes">Так</string>
     <string name="failed_thumbnail">Не вдалося завантажити мініатюру</string>
     <string name="failed_information">Не вдалося отримати інформацію про медіа</string>
-    <string name="confirm_deletion">Підтвердити видалення</string>
     <string name="thumbnail_desc">Мініатюра</string>
     <string name="store_videos_in_internal_storage">Зберегти відео у внутрішній пам\'яті</string>
     <string name="stored_videos_in_internal_storage_desc">Такі відео, як фільми та телешоу, зберігатимуться у внутрішній пам’яті програми. Доступ до них буде надано безпосередньо з програми.</string>
@@ -126,7 +124,6 @@
     <string name="downloads">Завантаження</string>
     <string name="download_notifications_description">Сповіщення про завантаження</string>
     <string name="failed_network_method_check">Будь ласка, перевірте дозволені способи завантаження</string>
-    <string name="confirm_deletion_desc">Ви хочете видалити %1$s?</string>
     <string name="no">Ні</string>
     <string name="tv_show_desc">%1$s - S%2$dE%3$d</string>
     <string name="downloading_desc">Завантаження %1$d файлів</string>
@@ -146,4 +143,37 @@
     <string name="media_service_invalid_id">Недійсний ID елемента</string>
     <string name="media_service_car_section_favorites">Улюблене</string>
     <string name="media_service_car_section_audiobooks">Аудіокниги</string>
+    <string name="media_service_car_section_playlists">Плейлисти</string>
+    <string name="downloading_title">Завантаження %1$s</string>
+    <string name="download_cancel">Відміна</string>
+    <string name="download_completed">Завантаження завершено</string>
+    <string name="download_progress">%1$d%%</string>
+    <string name="download_remove_keep_local">Зберегти локальний файл(и)</string>
+    <plurals name="download_remove_description">
+        <item quantity="one">Ви бажаєте видалити \"%2$s\" із завантажень?</item>
+        <item quantity="few">Ви бажаєте видалити ці \"%1$d\"завантаження?</item>
+        <item quantity="many">Ви бажаєте видалити ці \"%1$d\" завантажень?</item>
+        <item quantity="other">Ви бажаєте видалити ці \"%1$d\" завантажень?</item>
+    </plurals>
+    <string name="download_incomplete">Завантаження не завершено</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture">Горизонтальні жести</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture_summary">Дозволити горизонтальні жести для керування перемотуванням відео</string>
+    <string name="downloads_empty">Завантажень ще немає</string>
+    <string name="downloads_empty_description">Ви можете завантажувати фільми та телешоу, щоб дивитися їх офлайн. Шукайте іконку завантаження на сторінці з описом елемента.</string>
+    <string name="download_settings_dialog_title">Виберіть місце завантаження</string>
+    <string name="download_settings_dialog_message">Будь ласка, виберіть місце, куди потрібно зберігати завантажені медіафайли. За замовчуванням завантаження виконуються лише через Wi-Fi.</string>
+    <string name="select_folder">Виберіть папку</string>
+    <plurals name="download_remove_title">
+        <item quantity="one">Видалити завантаження</item>
+        <item quantity="few">Видалити завантаження</item>
+        <item quantity="many">Видалити завантажень</item>
+        <item quantity="other">Видалити завантажень</item>
+    </plurals>
+    <string name="select_all">Вибрати все</string>
+    <string name="deselect_all">Зняти вибір із усіх</string>
+    <string name="selected_count">%1$d вибрано</string>
+    <string name="download_location_not_set">Не вибрано місце збереження</string>
+    <string name="download_location_not_set_description">Щоб завантажити медіафайли, виберіть папку, у якій мають зберігатися файли.</string>
+    <string name="download_location_inaccessible">Місце для завантаження недоступне</string>
+    <string name="download_location_inaccessible_description">Вибране місце для завантаження більше недоступне. Будь ласка, виберіть іншу папку, щоб відновити завантаження.</string>
 </resources>

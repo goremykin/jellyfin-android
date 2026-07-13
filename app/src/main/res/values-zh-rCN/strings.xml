@@ -58,7 +58,6 @@
     <string name="music_notification_channel_description">用于控制音乐播放</string>
     <string name="music_notification_channel">Jellyfin 音乐播放器</string>
     <string name="media_service_car_item_no_title">无标题</string>
-    <string name="media_service_car_section_playlists">播放列表</string>
     <string name="media_service_car_section_genres">风格</string>
     <string name="media_service_car_section_songs">歌曲</string>
     <string name="media_service_car_section_artists">艺术家</string>
@@ -118,10 +117,8 @@
     <string name="yes">是</string>
     <string name="view_downloads">查看下载</string>
     <string name="download_notifications_description">下载通知</string>
-    <string name="confirm_deletion_desc">您想删除 %1$s 吗？</string>
     <string name="no">否</string>
     <string name="failed_network_method_check">请检查您允许的下载方法</string>
-    <string name="confirm_deletion">确认删除</string>
     <string name="thumbnail_desc">缩略图</string>
     <string name="store_videos_in_internal_storage">将视频存储在内部存储器中</string>
     <string name="stored_videos_in_internal_storage_desc">电影和电视节目等视频将存储在应用程序的内部存储空间中。允许从应用程序内部访问。</string>
@@ -145,4 +142,31 @@
     <string name="network_buffer_large_description">较大的缓冲区，可能有助于改善一般或不稳定的网络连接</string>
     <string name="network_buffer_extra_large">特大</string>
     <string name="network_buffer_extra_large_description">最大缓冲区，适用于慢速连接或卫星连接</string>
+    <string name="media_service_car_section_playlists">播放列表</string>
+    <string name="downloading_title">正在下载%1$s</string>
+    <string name="download_cancel">取消</string>
+    <string name="download_completed">下载完成</string>
+    <string name="download_progress">%1$d%%</string>
+    <string name="download_remove_keep_local">保留本地文件</string>
+    <plurals name="download_remove_description">
+        <item quantity="other">您确定要从下载中移除这%1$d个项目吗？</item>
+    </plurals>
+    <string name="download_incomplete">下载未完成</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture">水平手势</string>
+    <string name="pref_exoplayer_allow_horizontal_gesture_summary">允许使用水平手势控制视频跳转</string>
+    <string name="downloads_empty">暂无下载</string>
+    <string name="downloads_empty_description">您可以下载电影和电视剧以便离线观看。在项目详情页面上寻找下载图标即可。</string>
+    <plurals name="download_remove_title">
+        <item quantity="other">删除下载项</item>
+    </plurals>
+    <string name="download_settings_dialog_title">选择下载位置</string>
+    <string name="download_settings_dialog_message">请选择下载媒体的保存位置。默认仅使用 Wi-Fi 下载。</string>
+    <string name="select_folder">选择文件夹</string>
+    <string name="select_all">全选</string>
+    <string name="deselect_all">取消全选</string>
+    <string name="selected_count">已选择%1$d个</string>
+    <string name="download_location_not_set">未设置下载位置</string>
+    <string name="download_location_not_set_description">如需下载媒体，请选择用于存储媒体文件的文件夹。</string>
+    <string name="download_location_inaccessible">无法访问下载地址</string>
+    <string name="download_location_inaccessible_description">当前选择的下载位置已无法访问。请选择其他文件夹以继续下载。</string>
 </resources>

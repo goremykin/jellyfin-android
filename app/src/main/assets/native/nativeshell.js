@@ -32,6 +32,7 @@ for (const plugin of plugins) {
 }
 
 const { deviceId, deviceName, appName, appVersion } = JSON.parse(window.NativeInterface.getDeviceInformation());
+const codecCaps = JSON.parse(window.NativeInterface.getCodecCapabilities());
 
 window.NativeShell = {
     enableFullscreen() {
@@ -131,7 +132,7 @@ function getDeviceProfile(profileBuilder, item) {
             {
                 Condition: "LessThanEqual",
                 Property: "VideoLevel",
-                Value: "41"
+                Value: codecCaps.h264MaxLevel
             }]
     });
 
@@ -164,7 +165,11 @@ window.NativeShell.AppHost = {
         return "mobile";
     },
     supports(command) {
-        return features.includes(command.toLowerCase());
+        command = command.toLowerCase();
+        if (command === "chromecast") {
+            return window.NativeInterface.hasChromecast();
+        }
+        return features.includes(command);
     },
     getDeviceProfile,
     getSyncProfile: getDeviceProfile,

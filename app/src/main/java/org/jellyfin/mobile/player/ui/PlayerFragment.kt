@@ -100,7 +100,10 @@ class PlayerFragment : Fragment(), BackPressInterceptor {
         // Observe ViewModel
         viewModel.player.observe(this) { player ->
             playerView.player = player
-            if (player == null) parentFragmentManager.popBackStack()
+            // Automatically close fragment, unless we're in PiP mode
+            if (player == null && !(AndroidVersion.isAtLeastN && requireActivity().isInPictureInPictureMode)) {
+                parentFragmentManager.popBackStack()
+            }
         }
         viewModel.playerState.observe(this) { playerState ->
             val isPlaying = viewModel.playerOrNull?.isPlaying == true
@@ -229,6 +232,11 @@ class PlayerFragment : Fragment(), BackPressInterceptor {
         if (isLandscape()) {
             playerFullscreenHelper.enableFullscreen()
         }
+
+        // If playback ended during picture in picture we'll return to the main app when PiP is closed
+        if (viewModel.playerOrNull == null) {
+            parentFragmentManager.popBackStack()
+        }
     }
 
     /**
@@ -287,6 +295,8 @@ class PlayerFragment : Fragment(), BackPressInterceptor {
     fun onRewind() = viewModel.rewind()
 
     fun onFastForward() = viewModel.fastForward()
+
+    fun onSeekByOffset(offsetMs: Long) = viewModel.seekByOffset(offsetMs)
 
     fun onPreviousChapter() = viewModel.previousChapter()
 
@@ -357,7 +367,7 @@ class PlayerFragment : Fragment(), BackPressInterceptor {
     }
 
     fun onUserLeaveHint() {
-        if (AndroidVersion.isAtLeastN && viewModel.playerOrNull?.isPlaying == true) {
+        if (AndroidVersion.isAtLeastN && viewModel.playerOrNull != null) {
             requireActivity().enterPictureInPicture()
         }
     }
